@@ -6,16 +6,14 @@ head:
     content: 設定檔路徑 | superfile
 ---
 
-:::tip
-如果你想取得目前設定的路徑，可以試試 `spf pl`，它會印出所有 superfile 檔案位置。
-:::
+:::tip如果你想取得目前設定的路徑，可以試試 `spf pl`，它會印出所有 superfile 檔案位置。:::
 
 ## 目錄
 
 #### 設定目錄
 
-|         Linux         |              macOS              |          Windows           |
-| :-------------------: | :-----------------------------: | :------------------------: |
+|         Linux         |                   macOS                   |          Windows           |
+| :-------------------: | :---------------------------------------: | :------------------------: |
 | `~/.config/superfile` | `~/Library/Application Support/superfile` | `%LOCALAPPDATA%/superfile` |
 
 #### 主題目錄
@@ -56,14 +54,14 @@ spf --hotkey-file /path/to/your/hotkey.toml
 
 #### Config
 
-|               Linux               |                    macOS                    |                Windows                 |
-| :-------------------------------: | :-----------------------------------------: | :------------------------------------: |
+|               Linux               |                         macOS                         |                Windows                 |
+| :-------------------------------: | :---------------------------------------------------: | :------------------------------------: |
 | `~/.config/superfile/config.toml` | `~/Library/Application Support/superfile/config.toml` | `%LOCALAPPDATA%/superfile/config.toml` |
 
 #### Hotkeys
 
-|               Linux                |                    macOS                     |                 Windows                 |
-| :--------------------------------: | :------------------------------------------: | :-------------------------------------: |
+|               Linux                |                         macOS                          |                 Windows                 |
+| :--------------------------------: | :----------------------------------------------------: | :-------------------------------------: |
 | `~/.config/superfile/hotkeys.toml` | `~/Library/Application Support/superfile/hotkeys.toml` | `%LOCALAPPDATA%/superfile/hotkeys.toml` |
 
 #### 日誌檔

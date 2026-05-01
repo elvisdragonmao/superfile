@@ -6,16 +6,14 @@ head:
     content: Config file path | superfile
 ---
 
-:::tip
-If you want to get the set path you can try `spf pl` which will print out the file locations of all superfile.
-:::
+:::tip If you want to get the set path you can try `spf pl` which will print out the file locations of all superfile. :::
 
 ## Directories
 
 #### Config directory
 
-|         Linux         |              macOS              |          Windows           |
-| :-------------------: | :-----------------------------: | :------------------------: |
+|         Linux         |                   macOS                   |          Windows           |
+| :-------------------: | :---------------------------------------: | :------------------------: |
 | `~/.config/superfile` | `~/Library/Application Support/superfile` | `%LOCALAPPDATA%/superfile` |
 
 #### Theme directory
@@ -56,14 +54,14 @@ spf --hotkey-file /path/to/your/hotkey.toml
 
 #### Config
 
-|               Linux               |                    macOS                    |                Windows                 |
-| :-------------------------------: | :-----------------------------------------: | :------------------------------------: |
+|               Linux               |                         macOS                         |                Windows                 |
+| :-------------------------------: | :---------------------------------------------------: | :------------------------------------: |
 | `~/.config/superfile/config.toml` | `~/Library/Application Support/superfile/config.toml` | `%LOCALAPPDATA%/superfile/config.toml` |
 
 #### Hotkeys
 
-|               Linux                |                    macOS                     |                 Windows                 |
-| :--------------------------------: | :------------------------------------------: | :-------------------------------------: |
+|               Linux                |                         macOS                          |                 Windows                 |
+| :--------------------------------: | :----------------------------------------------------: | :-------------------------------------: |
 | `~/.config/superfile/hotkeys.toml` | `~/Library/Application Support/superfile/hotkeys.toml` | `%LOCALAPPDATA%/superfile/hotkeys.toml` |
 
 #### Log file

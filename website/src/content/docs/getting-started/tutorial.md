@@ -8,13 +8,9 @@ head:
 
 This tutorial will teach you how to use superfile step by step.
 
-:::caution
-If you haven't installed superfile yet, please [click here](/getting-started/installation).
-:::
+:::caution If you haven't installed superfile yet, please [click here](/getting-started/installation). :::
 
-:::tip
-A full list of hotkeys are available [here](/list/hotkey-list)
-:::
+:::tip A full list of hotkeys are available [here](/list/hotkey-list) :::
 
 ## Hotkeys tutorial
 
@@ -55,11 +51,9 @@ Also press `F` to hide or show all footer panel.
 
 ![panel-navigation-demo](../../../assets/demo/panel-navigation-demo.gif)
 
-:::tip
-The size of the folder will only be shown when you focus on the metadata.
+:::tip The size of the folder will only be shown when you focus on the metadata.
 
-For more detailed metadata, [click here](/configure/enable-plugin) to install the metadata plugin.
-:::
+For more detailed metadata, [click here](/configure/enable-plugin) to install the metadata plugin. :::
 
 To create more file panels, press `n`. Press `w` to close the focused file panel.
 
@@ -99,9 +93,7 @@ Press `v` to toggle between selection mode and normal (browser) mode.
 
 Once in selection mode, you can perform [file operations](#file-operations) on all selected files/folders. [Panel movement](#panel-movement) hotkeys also work in selection mode.
 
-:::tip
-The following operations can only be performed while in selection mode. Your current mode is displayed in the lower-right corner of the file panel (Select or Browser).
-:::
+:::tip The following operations can only be performed while in selection mode. Your current mode is displayed in the lower-right corner of the file panel (Select or Browser). :::
 
 To make selections, navigate to your file/folder and press `enter` or `L` (shift+l). Press the same key again to deselect.
 
@@ -113,19 +105,15 @@ You can also press `A` (shift+a) to select everything in the current directory.
 
 ### File operations
 
-:::note
-Only copy, cut and delete can be used in selection mode.
-:::
+:::note Only copy, cut and delete can be used in selection mode. :::
 
 Now let's learn how to perform file operations.
 
 Create a new file with `ctrl`+`n`. Type your new file's name and press `enter`. To create a new folder, add `/` to the end of the name.
 
-:::tip
-You can create a directory, subdirectory and file in one string. For example:
+:::tip You can create a directory, subdirectory and file in one string. For example:
 
-`directory/subdirectory/filename`
-:::
+`directory/subdirectory/filename` :::
 
 To rename, point your cursor at a file/folder and press `ctrl`+`r`.
 
@@ -137,15 +125,11 @@ Both cut and copied items are shown in the clipboard panel (lower-right corner).
 
 To paste, you can press `ctrl`+`v`.
 
-:::note
-In some terminals, for example Windows Powershell, `ctrl`+`v` pastes input from clipboard to terminal. So, `ctrl`+`v` might not work for paste. Either you can add `ctrl`+`w` hotkey for paste, or override default behaviour of `ctrl`+`v` on your terminal.
-:::
+:::note In some terminals, for example Windows Powershell, `ctrl`+`v` pastes input from clipboard to terminal. So, `ctrl`+`v` might not work for paste. Either you can add `ctrl`+`w` hotkey for paste, or override default behaviour of `ctrl`+`v` on your terminal. :::
 
 To delete, you can press `ctrl`+`d`
 
-:::note
-The deletion here is not direct deletion, but will be placed in the trash can. However, when you use an external hard drive, it will be deleted directly.
-:::
+:::note The deletion here is not direct deletion, but will be placed in the trash can. However, when you use an external hard drive, it will be deleted directly. :::
 
 To compress, press `ctrl`+`a`. To decompress, press `ctrl`+`e`.
 
@@ -153,9 +137,7 @@ To open a file with an editor, press `e`.
 
 To open the current directory with an editor, press `E` (shift+e).
 
-To change the default file editor, you can set the `EDITOR` environment variable in your terminal or you can use the `editor` config option (take priority over `EDITOR` environment variable). 
-To change the default directory editor, you can use the `dir_editor` config option.
-For example:
+To change the default file editor, you can set the `EDITOR` environment variable in your terminal or you can use the `editor` config option (take priority over `EDITOR` environment variable). To change the default directory editor, you can use the `dir_editor` config option. For example:
 
 ```bash
 EDITOR=nvim
@@ -168,38 +150,32 @@ editor = "nano"
 dir_editor = "vi"
 ```
 
-These are changes in config file. See [superfile-config](/configure/superfile-config) for more info.
-This will set `nano` as your default editor, and `vi` as your default directory editor. After setting this, `nano` will be used when opening files with the `e` key bindings, and `vi` will be used to open current directory with `E` key bindings.
+These are changes in config file. See [superfile-config](/configure/superfile-config) for more info. This will set `nano` as your default editor, and `vi` as your default directory editor. After setting this, `nano` will be used when opening files with the `e` key bindings, and `vi` will be used to open current directory with `E` key bindings.
 
-:::caution
-If your directory editor does not support opening the current directory with an editor, you may encounter an error when pressing `E`.
-:::
+:::caution If your directory editor does not support opening the current directory with an editor, you may encounter an error when pressing `E`. :::
 
 ![file-operations-demo](../../../assets/demo/file-operations-demo.gif)
 
 ### SPF Prompt
-#### Shell Mode
-Press `:` to open the prompt in shell mode, and execute any shell command in the current directory.
-![Prompt-Shell-Mode](../../../assets/tutorial/prompt_shell_mode.png)
 
-:::note
-You won't receive any stdout outputs.
-For now, this is meant for executing more complex file manipulations via the shell,
-rather than handling interactive outputs.
-You will be able to see the exit code of the command.
-:::
+#### Shell Mode
+
+Press `:` to open the prompt in shell mode, and execute any shell command in the current directory. ![Prompt-Shell-Mode](../../../assets/tutorial/prompt_shell_mode.png)
+
+:::note You won't receive any stdout outputs. For now, this is meant for executing more complex file manipulations via the shell, rather than handling interactive outputs. You will be able to see the exit code of the command. :::
 
 #### SPF Mode
-Press `>` to open the prompt in SPF mode. 
-![Prompt-SPF-Mode](../../../assets/tutorial/prompt_spf_mode.png)
+
+Press `>` to open the prompt in SPF mode. ![Prompt-SPF-Mode](../../../assets/tutorial/prompt_spf_mode.png)
 
 In this mode, you can execute these spf commands :
+
 - `split` - Open a new panel at a current file panel's path.
 - `open <PATH>` - Open a new panel at a specified path.
 - `cd <PATH>` - Change directory of current panel.
 
-In this mode, You can substitute shell environment variables via `${}`, shell commands via `$()` and prefix path with `~` to get substituted to home directory 
-For example 
+In this mode, You can substitute shell environment variables via `${}`, shell commands via `$()` and prefix path with `~` to get substituted to home directory For example
+
 - `cd ${HOME}` or `cd ~/xyz`
 - `open $(dirname $(which bash))`
 

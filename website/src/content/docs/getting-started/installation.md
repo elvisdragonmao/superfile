@@ -12,9 +12,7 @@ First make sure you have the following tools installed on your machine:
 
 - [Any Nerd-font ](https://www.nerdfonts.com/font-downloads), and set the font for your terminal application to use the installed Nerd-font
 
-:::tip
-If you don't install `Nerd font`, superfile will still work, but the UI may look a bit off. It's recommended to disable the Nerd font option to avoid this issue.
-:::
+:::tip If you don't install `Nerd font`, superfile will still work, but the UI may look a bit off. It's recommended to disable the Nerd font option to avoid this issue. :::
 
 ## Installation Scripts
 
@@ -29,6 +27,7 @@ bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 ```
 
 Or with `wget`:
+
 ```bash
 bash -c "$(wget -qO- https://superfile.dev/install.sh)"
 ```
@@ -47,11 +46,9 @@ With `powershell`:
 powershell -ExecutionPolicy Bypass -Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/install.ps1'))"
 ```
 
-:::note
-To uninstall, run the above `powershell` command with the modified URL:
+:::note To uninstall, run the above `powershell` command with the modified URL:
 
-`https://superfile.dev/uninstall.ps1`
-:::
+`https://superfile.dev/uninstall.ps1` :::
 
 Use `SPF_INSTALL_VERSION` to specify a version :
 
@@ -63,7 +60,7 @@ With [Winget](https://winget.run/):
 
 ```powershell
 winget install --id yorukot.superfile
-``````
+```
 
 With [Scoop](https://scoop.sh/):
 
@@ -143,6 +140,7 @@ pixi global install superfile
 ### X-CMD
 
 [x-cmd](https://www.x-cmd.com/) is a **toolbox for Posix Shell**, offering a lightweight package manager built using shell and awk.
+
 ```sh
 x env use superfile
 ```

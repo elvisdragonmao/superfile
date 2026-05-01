@@ -6,7 +6,9 @@ head:
     content: Config file path | superfile
 ---
 
-:::tip If you want to get the set path you can try `spf pl` which will print out the file locations of all superfile. :::
+:::tip
+If you want to get the set path you can try `spf pl` which will print out the file locations of all superfile.
+:::
 
 ## Directories
 

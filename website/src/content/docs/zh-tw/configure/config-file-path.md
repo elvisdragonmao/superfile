@@ -6,7 +6,9 @@ head:
     content: 設定檔路徑 | superfile
 ---
 
-:::tip如果你想取得目前設定的路徑，可以試試 `spf pl`，它會印出所有 superfile 檔案位置。:::
+:::tip
+如果你想取得目前設定的路徑，可以試試 `spf pl`，它會印出所有 superfile 檔案位置。
+:::
 
 ## 目錄
 

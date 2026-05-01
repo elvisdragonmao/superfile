@@ -12,7 +12,9 @@ First make sure you have the following tools installed on your machine:
 
 - [Any Nerd-font ](https://www.nerdfonts.com/font-downloads), and set the font for your terminal application to use the installed Nerd-font
 
-:::tip If you don't install `Nerd font`, superfile will still work, but the UI may look a bit off. It's recommended to disable the Nerd font option to avoid this issue. :::
+:::tip
+If you don't install `Nerd font`, superfile will still work, but the UI may look a bit off. It's recommended to disable the Nerd font option to avoid this issue.
+:::
 
 ## Installation Scripts
 
@@ -46,9 +48,11 @@ With `powershell`:
 powershell -ExecutionPolicy Bypass -Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/install.ps1'))"
 ```
 
-:::note To uninstall, run the above `powershell` command with the modified URL:
+:::note
+To uninstall, run the above `powershell` command with the modified URL:
 
-`https://superfile.dev/uninstall.ps1` :::
+`https://superfile.dev/uninstall.ps1`
+:::
 
 Use `SPF_INSTALL_VERSION` to specify a version :
 

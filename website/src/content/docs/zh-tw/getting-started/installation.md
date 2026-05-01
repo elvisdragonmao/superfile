@@ -12,7 +12,9 @@ head:
 
 - [任一 Nerd-font](https://www.nerdfonts.com/font-downloads)，並將終端機應用程式的字型設定為已安裝的 Nerd-font
 
-:::tip如果沒有安裝 `Nerd font`，superfile 仍然可以運作，但 UI 可能會看起來有點不對。建議停用 Nerd font 選項以避免這個問題。:::
+:::tip
+如果沒有安裝 `Nerd font`，superfile 仍然可以運作，但 UI 可能會看起來有點不對。建議停用 Nerd font 選項以避免這個問題。
+:::
 
 ## 安裝腳本
 
@@ -46,9 +48,11 @@ SPF_INSTALL_VERSION=1.2.1 bash -c "$(curl -sLo- https://superfile.dev/install.sh
 powershell -ExecutionPolicy Bypass -Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/install.ps1'))"
 ```
 
-:::note若要解除安裝，請將上述 `powershell` 指令中的 URL 改成：
+:::note
+若要解除安裝，請將上述 `powershell` 指令中的 URL 改成：
 
-`https://superfile.dev/uninstall.ps1` :::
+`https://superfile.dev/uninstall.ps1`
+:::
 
 使用 `SPF_INSTALL_VERSION` 指定版本：
 

@@ -8,9 +8,13 @@ head:
 
 本教學會一步一步教你如何使用 superfile。
 
-:::caution 如果你還沒有安裝 superfile，請[點這裡](/zh-tw/getting-started/installation)。:::
+:::caution
+如果你還沒有安裝 superfile，請[點這裡](/zh-tw/getting-started/installation)。
+:::
 
-:::tip完整快捷鍵清單可在[這裡](/zh-tw/list/hotkey-list)查看。:::
+:::tip
+完整快捷鍵清單可在[這裡](/zh-tw/list/hotkey-list)查看。
+:::
 
 ## 快捷鍵教學
 
@@ -51,9 +55,11 @@ superfile 執行後會顯示五個面板：
 
 ![panel-navigation-demo](../../../../assets/demo/panel-navigation-demo.gif)
 
-:::tip 資料夾大小只會在焦點位於 metadata 時顯示。
+:::tip
+資料夾大小只會在焦點位於 metadata 時顯示。
 
-若要取得更詳細的 metadata，請[點這裡](/zh-tw/configure/enable-plugin)安裝 metadata plugin。:::
+若要取得更詳細的 metadata，請[點這裡](/zh-tw/configure/enable-plugin)安裝 metadata plugin。
+:::
 
 若要建立更多 file 面板，請按 `n`。按 `w` 可關閉目前聚焦的 file 面板。
 
@@ -93,7 +99,9 @@ superfile 提供多種快捷鍵讓你在目錄間移動。角括號游標 `>` �
 
 進入選取模式後，你可以對所有選取的檔案或資料夾執行[檔案操作](#檔案操作)。[面板移動](#面板移動)的快捷鍵在選取模式中也可以使用。
 
-:::tip 以下操作只能在選取模式中執行。目前模式會顯示在 file 面板右下角（Select 或 Browser）。:::
+:::tip
+以下操作只能在選取模式中執行。目前模式會顯示在 file 面板右下角（Select 或 Browser）。
+:::
 
 若要選取項目，移動到檔案或資料夾後按 `enter` 或 `L`（shift+l）。再次按下相同按鍵可取消選取。
 
@@ -105,15 +113,19 @@ superfile 提供多種快捷鍵讓你在目錄間移動。角括號游標 `>` �
 
 ### 檔案操作
 
-:::note選取模式中只能使用複製、剪下和刪除。:::
+:::note
+選取模式中只能使用複製、剪下和刪除。
+:::
 
 現在來學習如何執行檔案操作。
 
 使用 `ctrl`+`n` 建立新檔案。輸入新檔案名稱並按 `enter`。若要建立新資料夾，請在名稱結尾加上 `/`。
 
-:::tip你可以用一個字串建立目錄、子目錄和檔案。例如：
+:::tip
+你可以用一個字串建立目錄、子目錄和檔案。例如：
 
-`directory/subdirectory/filename` :::
+`directory/subdirectory/filename`
+:::
 
 若要重新命名，將游標指向檔案或資料夾後按 `ctrl`+`r`。
 
@@ -125,11 +137,15 @@ superfile 提供多種快捷鍵讓你在目錄間移動。角括號游標 `>` �
 
 若要貼上，可以按 `ctrl`+`v`。
 
-:::note 在某些終端機中，例如 Windows Powershell，`ctrl`+`v` 會將剪貼簿內容貼到終端機輸入。因此，`ctrl`+`v` 可能無法用於貼上。你可以新增 `ctrl`+`w` 快捷鍵作為貼上，或覆寫終端機中 `ctrl`+`v` 的預設行為。:::
+:::note
+在某些終端機中，例如 Windows Powershell，`ctrl`+`v` 會將剪貼簿內容貼到終端機輸入。因此，`ctrl`+`v` 可能無法用於貼上。你可以新增 `ctrl`+`w` 快捷鍵作為貼上，或覆寫終端機中 `ctrl`+`v` 的預設行為。
+:::
 
 若要刪除，可以按 `ctrl`+`d`
 
-:::note這裡的刪除不是直接刪除，而是會放入垃圾桶。不過，使用外接硬碟時會直接刪除。:::
+:::note
+這裡的刪除不是直接刪除，而是會放入垃圾桶。不過，使用外接硬碟時會直接刪除。
+:::
 
 若要壓縮，按 `ctrl`+`a`。若要解壓縮，按 `ctrl`+`e`。
 
@@ -152,7 +168,9 @@ dir_editor = "vi"
 
 這些是設定檔中的變更。更多資訊請參閱 [superfile-config](/zh-tw/configure/superfile-config)。這會將 `nano` 設為你的預設編輯器，並將 `vi` 設為你的預設目錄編輯器。設定後，使用 `e` 按鍵綁定開啟檔案時會使用 `nano`，使用 `E` 按鍵綁定開啟目前目錄時會使用 `vi`。
 
-:::caution如果你的目錄編輯器不支援用編輯器開啟目前目錄，按下 `E` 時可能會遇到錯誤。:::
+:::caution
+如果你的目錄編輯器不支援用編輯器開啟目前目錄，按下 `E` 時可能會遇到錯誤。
+:::
 
 ![file-operations-demo](../../../../assets/demo/file-operations-demo.gif)
 
@@ -164,7 +182,9 @@ dir_editor = "vi"
 
 ![Prompt-Shell-Mode](../../../../assets/tutorial/prompt_shell_mode.png)
 
-:::note 你不會收到任何 stdout 輸出。目前這主要用於透過 shell 執行較複雜的檔案操作，而不是處理互動式輸出。你可以看到指令的 exit code。:::
+:::note
+你不會收到任何 stdout 輸出。目前這主要用於透過 shell 執行較複雜的檔案操作，而不是處理互動式輸出。你可以看到指令的 exit code。
+:::
 
 #### SPF 模式
 

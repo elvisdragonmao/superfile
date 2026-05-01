@@ -6,7 +6,9 @@ head:
     content: Hotkey list | superfile
 ---
 
-:::tip These are the default hotkeys and you can [change](/configure/custom-hotkeys) them all! :::
+:::tip
+These are the default hotkeys and you can [change](/configure/custom-hotkeys) them all!
+:::
 
 ## General
 
@@ -20,7 +22,9 @@ head:
 | Open help menu(hotkeylist)              | `?`              | `open_help_menu` |
 | Toggle footer                           | `F`              | `toggle_footer`  |
 
-:::note Quit superfile and cd to current folder "cd_quit" require the same scripts as ["cd_on_quit"](/configure/superfile-config/#cd_on_quit) setting :::
+:::note
+Quit superfile and cd to current folder "cd_quit" require the same scripts as ["cd_on_quit"](/configure/superfile-config/#cd_on_quit) setting
+:::
 
 ## Panel navigation
 

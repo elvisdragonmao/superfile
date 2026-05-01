@@ -6,7 +6,9 @@ head:
     content: 快捷鍵清單 | superfile
 ---
 
-:::tip這些是預設快捷鍵，而且您可以全部[變更](/zh-tw/configure/custom-hotkeys)！:::
+:::tip
+這些是預設快捷鍵，而且您可以全部[變更](/zh-tw/configure/custom-hotkeys)！
+:::
 
 ## 一般操作
 
@@ -20,7 +22,9 @@ head:
 | 開啟說明選單（快捷鍵清單）        | `?`              | `open_help_menu` |
 | 切換 footer 顯示                  | `F`              | `toggle_footer`  |
 
-:::note 離開 superfile 並 cd 到目前資料夾的 `cd_quit` 需要與 [`cd_on_quit`](/zh-tw/configure/superfile-config/#cd_on_quit) 設定相同的腳本。:::
+:::note
+離開 superfile 並 cd 到目前資料夾的 `cd_quit` 需要與 [`cd_on_quit`](/zh-tw/configure/superfile-config/#cd_on_quit) 設定相同的腳本。
+:::
 
 ## 面板導覽
 

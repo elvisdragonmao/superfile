@@ -2,6 +2,7 @@
 import Landing from "../layouts/Landing.astro";
 import Giscus from "../components/Giscus.astro";
 import SiteNav from "../components/SiteNav.astro";
+import { Code } from "astro:components";
 import { Image } from "astro:assets";
 import demo from "../assets/demo.png";
 import homeI18n from "../i18n/home.json";
@@ -48,26 +49,31 @@ const installCommands = [
 	{
 		id: "script",
 		label: "Linux / macOS",
+		lang: "bash",
 		cmd: 'bash -c "$(curl -sLo- https://superfile.dev/install.sh)"'
 	},
 	{
 		id: "brew",
 		label: "Homebrew",
+		lang: "bash",
 		cmd: "brew install superfile"
 	},
 	{
 		id: "windows",
 		label: "Windows",
+		lang: "powershell",
 		cmd: "powershell -ExecutionPolicy Bypass -Command \"Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/install.ps1'))\""
 	},
 	{
 		id: "arch",
 		label: "Arch Linux",
+		lang: "bash",
 		cmd: "sudo pacman -S superfile"
 	},
 	{
 		id: "nix",
 		label: "Nix",
+		lang: "bash",
 		cmd: "nix profile install github:yorukot/superfile#superfile"
 	}
 ];
@@ -233,7 +239,9 @@ const installCommands = [
 										<span class="install-prompt" aria-hidden="true">
 											~&nbsp;$
 										</span>
-										<code class="install-cmd">{tab.cmd}</code>
+										<span class="install-cmd">
+											<Code code={tab.cmd} lang={tab.lang} theme="catppuccin-mocha" inline />
+										</span>
 										<button class="copy-btn" data-copy={tab.cmd} aria-label={`${t.install.copyAriaPrefix} ${tab.label} ${t.install.copyAriaSuffix}`}>
 											<svg
 												class="copy-icon"
